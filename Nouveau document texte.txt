@@ -1,0 +1,31 @@
+
+function compatible(bl, l)
+{
+    for(i=0; i < posibl.length; i++)
+    {
+        if (posibl[i][0] == bl)
+        {
+            for(j=0; j < posibl[i][1].length; j++)
+            {
+                if(posibl[i][1][j] == l[3])
+                {
+                    return 1;
+                }
+            }
+            return 0;
+        }
+    }
+}
+function cree_tab_info(bloood)
+{
+    affiche = document.getElementById("last one")
+    affiche.innerHTML = '<tr> <th class="TH">REGION</th> <th class="TH">TELEPHONE</th> <th class="TH">&nbsp;&nbsp;GROUPE SANGUIN&nbsp;</th> </tr>'
+    for(i=0; i < don_tab.length; i++)
+    {
+        if (compatible(bloood, don_tab[i]) == 1)
+        {
+            affiche.innerHTML = affiche.innerHTML + '<tr> <td class="TD">' + traduire_reg(don_tab[i][1]) + '</td> <td class="tele">'
+            affiche.innerHTML = affiche.innerHTML + don_tab[i][3] + '</td> <td class="grps">' + don_tab[i][4] +'</td> </tr> '
+        }
+    }
+}

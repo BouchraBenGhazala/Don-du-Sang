@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+        }
+
+    .hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(sang3.jpeg);
+	background-size: cover;
+	background-position: center;
+    }
+    nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 0px;
+	padding-left: 10%;
+	padding-right: 8%;
+    position: sticky;
+    top: 0px;
+    float: left;
+}
+    nav a:hover{
+        text-decoration: underline;
+    }
+    nav a:target{
+        color: blue;
+    }
+    .logo{
+        width: 250px;
+        padding-right: 100px;
+
+    }
+   
+    nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+    }
+    nav{
+        background-color: transparent;
+        width: 100%;
+    }   
+    nav ul li a{
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+    } 
+    nav ul li a:hover{
+	color: #f9004d;
+	transition: .4s;
+    }
+    .content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+    }
+    h1{
+	color: rgb(134, 21, 23);
+	margin: 20px 0px 20px;
+	font-size: 25px;
+    }
+    span{
+	color: #f9004d;
+    }
+    h4{
+        font-size: 30px;
+    }
+    /*---------page Savoir Plus------------ */
+    .container {
+  display: flex;
+}
+
+.box {
+  width: 33.3333%;/* pour diviser le conteneur en 3 champs de largeur égale */
+  padding: 20px;
+  margin:20px;
+  margin-top: 2px;
+  padding-bottom:40px;
+  
+}
+
+.box1 {
+  Border : 1px solid blue;
+  Border-radius: 10px; 
+  text-align:justify;
+}
+
+.box2 {
+  Border : 1px solid blue;
+  Border-radius: 10px; 
+  text-align:justify;
+}
+
+.box3 {
+  Border : 1px solid blue;
+  Border-radius: 10px; 
+  text-align:justify;
+}
+.titre{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    color: blue;   
+    
+}
+strong{
+    border: 2px red solid;
+    border-radius: 10px;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.SavoirPlus{
+    width: 100%;
+	padding: 100px 0px;
+    background-color:azure;
+	margin-bottom:10px;
+}
+h2{
+    color: red;
+    padding-bottom: 10px;
+}
+/*----------Page S'inscrire --------------*/
+.Sinscrire{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: white;
+    display: flex;
+    background-color:aliceblue;
+}
+
+select{
+    background-color: azure;
+}
+.box{
+  width: 50%; /* pour diviser le conteneur en 2 champs de largeur égale */
+  padding: 20px;
+}
+.M{
+    border-radius: 20px;
+}
+.imge {
+    border-image: fill;
+	height:400px;
+    width:600px;
+    padding-top: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.texte {
+  font-family: 'Times New Roman', Times, serif;
+  color: gray; 
+}
+optgroup{
+    color: red;
+}
+option{
+    color:black
+}
+/*-----style formulaire----- */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .form-input {
+    border: 1px solid azure;
+    border-radius: 6px;
+    padding: 0.5rem;
+    background-color:azure;
+  }
+
+  .form-button1 {
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .form-button2 {
+    background-color: blue;
+    border-radius: 4px;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  /*-----------Page Apropos-------------*/
+  .Apropos{
+	width: 100%;
+	padding: 23px 0px;
+    background-color:aliceblue;
+    display: flex;
+    background-color:rgb(86, 185, 208);
+}
+
+.section{
+  width: 50%; /* pour diviser le conteneur en 2 champs de largeur égale */
+  padding: 20px;
+  margin:20px;
+  margin-top: 2px;
+  padding-bottom:40px;
+  
+}
+
+.section1 {
+  text-align: justify;
+  margin-right:20px;
+  font-size: 23px;
+  color: aliceblue;
+ 
+}
+p{
+    color: black;
+}
+.U{
+    color: black;
+    padding-left: 40px;
+    padding-top: 20px;
+    
+}
+.image{
+    height:400px;
+    width:600px;
+    padding-top: 60px;
+	margin-top: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+/*---------page Donnees------------ */
+.C{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.Donnees{
+	width: 100%;
+	padding: 23px 0px;
+    background-color:aliceblue;
+    display: flex;
+}
+.b{
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 100px;
+    background-color: rgb(86, 185, 208);
+    padding-left: 6%;
+
+}
+.b1{
+    background-color:rgb(86, 185, 208) ;
+    Border : 3px solid rgb(86, 185, 208);
+    text-align:justify;
+    margin-top: 100px;
+    padding-left: 4%;
+}
+.R1{
+    height: 120px;
+    width: 520px;
+    border: 1px solid white;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.T1{
+    margin-left: 55px;
+    margin-top: 5px;
+    background-color: azure;
+    border: azure;
+}
+.T{
+    width: 400px;
+    height: 200px;
+    margin: 70px;
+    background-color: azure;
+
+}
+
+/*------------Hidden page---------*/
+.Tab,.TH,.TD{
+    border-collapse: collapse;
+        
+    }
+    .TH{
+        color:rgb(134, 47, 47);
+        background-color:rgb(86, 185, 208) ;
+        font-family: 'helvetica neue', helvetica, arial, sans-serif;
+        text-shadow: 1px 1px 1px black;
+        width: 200px;
+
+    }
+    .TD{
+        border: 1px black solid;
+        width: 400px;
+
+    }
+
+    .divtab{
+        align-items: center;
+        justify-content: center;
+        background-color: azure;
+        display: none;
+    }
+    .coord{
+        padding-left: 400px;
+        width: 700px;
+    }
+
+   .Tab{
+        margin:auto; 
+        width: 700px;
+    }
+    .tele{
+        color:rgb(24, 57, 221);
+        border: 1px black solid;
+        text-align: center;
+    }
+    .grps{
+        color:rgb(240, 61, 61);
+        border: 1px black solid;
+        text-align: center;
+    }
+    .prg{
+        text-align: justify;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom:10px ;
+        font-family: 'Rock Salt', cursive;
+        font-size: medium;
+    }
+    .bouton{
+        color:rgb(134, 47, 47) ;
+        border: 2px rgb(86, 185, 208) solid;
+        border-radius: 5px;
+    }
+    .bouton:hover{
+        color: red;
+        font-size: medium;
+    }
+
+
+/*-------------Page contact------------*/
+
+.contact{
+    background-color:gainsboro;
+}
+.Tel{
+    padding-left: 350px;
+}
+.copyright{
+    padding-left: 500px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav id = "barre">
+        <!--<h2 class="logo">Don du <span>sang</h2>-->
+            <img src="medical solutions logo.png" class="logo">
+        <ul>
+            <li id="li1"><a href="#L1">Acceuil</a></li>
+            <li id="li2"><a href="#L2">En Savoir plus</a></li>
+            <li id="li3"><a href="#L3">À propos</a></li>
+            <li id="li4"><a href="#L4">Données</a></li>
+            <li id="li5"><a href="#L5">S'inscrire</a></li>
+            <li id="li6"><a href="#L6">Contact</a></li>
+        </ul>
+        <a href="#" class="btn"></a>
+
+    </nav>
+    <div class="hero" id="L1">
+        <div class="content">
+            <h4>Ensemble,</h4>
+			<h1>Sauvons <span>des vies!</span></h1>
+            </h1>
+
+        </div><!--Content-->
+    </div><!--Hero-->
+    <!--Page2-->
+    <div class="SavoirPlus" id="L2">
+       
+        <h2 class="titre"><center><strong>A PROPOS DU DON DU SANG</strong></center></h2>
+<div class="container">
+  <div class="box box1"><h2><center>Qui peut donner du sang ?</center></h2>
+Toute personne en bonne santé âgée de 18 à 70 ans peut donner du sang, sous réserve de respecter certaines conditions de poids et de fréquence de don.
+
+</div><!--box box1-->
+  <div class="box box2"><h2><center>Comment donner du sang ?</center></h2>
+    Pour donner du sang, il suffit de se rendre dans un centre de collecte et de remplir un questionnaire de santé. Le personnel médical vérifiera votre état de santé et vous posera des questions sur votre mode de vie et votre 
+    historique médical. Si vous êtes éligible, vous pourrez donner votre sang.
+</div><!--box box2-->
+  <div class="box box3"><h2><center>Pourquoi donner du sang ?</center></h2>
+    Le don de sang est important car il permet de sauver des vies. Le sang est utilisé pour soigner les personnes souffrant d'anémie, de cancer ou de blessures graves, par exemple. Le don de sang est une action simple qui peut avoir un impact considérable sur la vie des autres.
+</div><!--box box3-->
+</div><!--Container-->
+
+</div><!--SavoirPlus-->
+
+<!--Page 3-->
+<div class="Apropos" id="L3">
+    <div class="section section1">
+        <br><br><br>
+<h1><u>À Propos</u></h1>
+<br>
+<p><font size="4%">Ce site a pour objectif de <b>simplifier le processus de don de sang</b> en permettant aux donneurs 
+et aux personnes ayant besoin de sang de se mettre <b>en contact</b> de manière efficace et rapide. 
+<br><br><b>Le formulaire</b> ci-dessous doit être rempli par les personnes qui 
+souhaitent donner du sang et par les personnes qui souhaitent le recevoir également<b><br><br> En cas de besoin,</b>  une liste de donneurs sera 
+affichée à l'écran pour que vous puissiez fixer un <b> rendez-vous</b>.</font></p>
+</div>
+    <div class="section section2">
+        <img class="image" src="Sang.jpeg">
+    </div>
+
+</div>
+<!--Page 4-->
+<div class="Donnees" id="L4">
+    <div class="box b1">
+        <table border="1px" class="T">
+            <tr>
+                <td align="center" style="color:green ;">Total inscrits de don</td>
+                <td align="center" style="color:red ;">Total inscrits de besoin</td>
+            </tr>
+            <tr>
+                <td id="total_don" align="center">0</td>
+                <td id="total_besoin" align="center">0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box b">
+        <div class="R1">
+            <p>Tanger - Tétouan - Al Hoceima</p>
+            <table border="1px" cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="TTH A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="TTH A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="TTH A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="TTH A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="TTH B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="TTH B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="TTH B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="TTH B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="TTH AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="TTH AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="TTH AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="TTH AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="TTH O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="TTH O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="TTH O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="TTH O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        
+        <div class="R1">
+            L'Oriental
+            <table border="1px" cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="Oriental A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="Oriental A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="Oriental A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="Oriental A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="Oriental B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="Oriental B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="Oriental B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="Oriental B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="Oriental AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="Oriental AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="Oriental AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="Oriental AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="Oriental O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="Oriental O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="Oriental O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="Oriental O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Fès - Meknès
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="FM A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="FM A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="FM A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="FM A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="FM B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="FM B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="FM B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="FM B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="FM AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="FM AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="FM AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="FM AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="FM O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="FM O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="FM O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="FM O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Rabat - Salé - Kénitra
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="RSK A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="RSK A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="RSK A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="RSK A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="RSK B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="RSK B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="RSK B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="RSK B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="RSK AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="RSK AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="RSK AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="RSK AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="RSK O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="RSK O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="RSK O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="RSK O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Beni Mellal - Khénifra
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="BMK A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="BMK A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="BMK A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="BMK A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="BMK B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="BMK B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="BMK B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="BMK B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="BMK AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="BMK AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="BMK AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="BMK AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="BMK O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="BMK O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="BMK O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="BMK O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Casablanca - Settat
+            <table  border="1px" cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="CS A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="CS A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="CS A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="CS A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="CS B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="CS B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="CS B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="CS B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="CS AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="CS AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="CS AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="CS AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="CS O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="CS O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="CS O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="CS O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Marrakech - Safi
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="MS A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="MS A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="MS A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="MS A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="MS B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="MS B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="MS B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="MS B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="MS AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="MS AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="MS AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="MS AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="MS O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="MS O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="MS O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="MS O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Drâa - Tafilalet
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="DT A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="DT A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DT A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="DT A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DT B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DT B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DT B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DT B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DT AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="DT AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DT AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DT AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DT O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DT O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DT O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="DT O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Souss -Massa
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="SM A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="SM A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="SM A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="SM A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="SM B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="SM B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="SM B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="SM B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="SM AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="SM AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="SM AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="SM AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="SM O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="SM O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="SM O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="SM O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Guelmim - Oued Noun
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="GO A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="GO A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="GO A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="GO A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="GO B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="GO B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="GO B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="GO B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="GO AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="GO AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="GO AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="GO AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="GO O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="GO O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="GO O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="GO O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Laâyoune - Saguia al Hamra
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="LS A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="LS A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="LS A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="LS A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="LS B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="LS B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="LS B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="LS B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="LS AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="LS AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="LS AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="LS AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="LS O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="LS O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="LS O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="LS O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+        </div>
+        <div class="R1">
+            Dakhla - Oued Ed-Dahab
+            <table border="1px"  cellpadding="5" cellspacing="5" class="T1">
+                <tr> <td align="center" colspan="2" style='border:none;' ><img src="a+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="a-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="b-.png" width="45" height="45"></td>
+                    <td align="center" colspan="2" style='border:none;' ><img src="ab+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="ab-.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o+.png" width="45" height="45"></td> 
+                    <td align="center" colspan="2" style='border:none;'><img src="o-.png" width="45" height="45"></td>
+                </tr>
+                
+                <tr> <td id="DO A+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td> 
+                    <td  id="DO A+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DO A-D" align="center" style="color: green; font-weight: bold; border-radius:8px"  >0</td>
+                    <td  id="DO A-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DO B+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DO B+B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DO B-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DO B-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DO AB+D" align="center" style="color: green ; font-weight: bold;border-radius:8px" >0</td> 
+                    <td  id="DO AB+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DO AB-D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DO AB-B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DO O+D" align="center"  style="color: green; font-weight: bold; border-radius:8px">0</td>
+                    <td  id="DO O+B" align="center" style="color: red; font-weight: bold; border-radius:8px" >0</td>
+                    <td  id="DO O-D" align="center" style="color: green; font-weight: bold;border-radius:8px" >0</td>
+                    <td  id="DO O-B" align="center"  style="color: red; font-weight: bold; border-radius:8px">0</td>
+                </tr>
+                </table>
+    </div>
+    </div>
+
+</div><!--Donnees-->
+
+
+
+<!--Page 5-->
+ <div class="Sinscrire" id="L5">
+    <div class="box imge">
+        <img src="don-de-sang2.png" class="M">
+    </div><!--Image-->
+
+    <div class="box texte">
+        <fooo class="form-container" autocomplete="off">
+            <div class="form-group">
+              <label class="form-label" for="name">Nom</label>
+              <input class="form-input" placeholder="Entrer votre nom complet" type="text" id="name" name="name " style="border: 1px solid gray" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ville">Région</label>
+              <select required id="region">
+                <option value="" class="K1"></option>
+                <option value="TTH">Tanger - Tétouan - Al Hoceima</option>
+                <option value="Oriental">L'Oriental</option>
+                <option value="FM">Fès - Meknès</option>
+                <option value="RSK"> Rabat - Salé - Kénitra</option>
+                <option value="BMK">Beni Mellal - Khénifra</option>
+                <option value="CS">Casablanca - Settat</option>
+                <option value="MS">Marrakech - Safi</option>
+                <option value="DT">Drâa - Tafilalet</option>
+                <option value="SM">Souss -Massa</option>
+                <option value="GO">Guelmim - Oued Noun</option>
+                <option value="LS">Laâyoune - Saguia al Hamra</option>
+                <option value="DO">Dakhla - Oued Ed-Dahab</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label"  for="telephone" placeholder="06********">Téléphone</label>
+              <input class="form-input" placeholder="Entrer votre numéro de téléphone" type="text" id="telephone" name="telephone" style="border: 1px solid gray" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="groupe-sanguin">Groupe sanguin</label>
+              <select required id="Groupe sanguin">
+                <option value=""></option>
+                <optgroup label="O">
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </optgroup>
+                <optgroup label="A">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                </optgroup>
+                <optgroup label="B">
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                </optgroup>
+                <optgroup label="AB">
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="CIN">CIN</label>
+                <input class="form-input" type="text" id="CIN" name="CIN" placeholder="Entrer votre CIN" maxlength="8" style="border: 1px solid gray" required>
+              </div>
+            <div>
+            <button id="don" class="form-button1">don</button>
+            &nbsp;&nbsp;&nbsp;
+            <button id="besoin" class="form-button2">besoin</button>
+        </div>
+          </fooo>
+    </div><!--texte-->
+</div><!--Sinscrire-->
+
+<!--Hidden page-->
+<div id="divtab" class="divtab">
+    <p class="prg">Bonjour,vous trouverez ci-joint une liste des numéros 
+        des personnes que vous pouvez <br> contacter pour fixer un rendez-vous :</p>
+    <div class="coord">
+        <!--Table 1-->
+        <table id="last one" class="Tab">
+        <tr>
+            <th class="TH">REGION</th>
+            <th class="TH">TELEPHONE</th>
+            <th class="TH">&nbsp;&nbsp;GROUPE SANGUIN&nbsp;</th>
+        </tr>
+        <tr>
+            <td class="TD">Casablanca-Settat</td>
+            <td class="tele">0629052319</td>
+            <td class="grps">A+</td>
+        </tr>
+        <tr>
+            <td class="TD">Tanger-Tétouan-Al Hoceima</td>
+            <td class="tele">0723491420</td>
+            <td class="grps">O-</td>
+        </tr>
+        <tr>
+            <td class="TD">Marrakech-Safi</td>
+            <td class="tele">0623948826</td>
+            <td class="grps">A-</td>
+        </tr>
+        <tr>
+            <td class="TD">Casablanca-Settat</td>
+            <td class="tele">0683456398</td>
+            <td class="grps">AB-</td>
+        </tr>
+</table>
+</div>
+<p class="prg">Si vous n'arrivez pas à trouver une personne joignable, veuillez réclamer ci-dessous.
+    <br><u>MERCI</u> pour votre compréhension.
+    <button id="reclamation" class="bouton">Réclamation</button>
+</p>
+
+</div>
+
+<!--Page 6-->
+<div class="contact" id="L6">
+    <p class="Tel"><u><b>Tel</b></u>: &nbsp;+212 5 22 00 20 20  ou
+        +212 5 22 00 20 25 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <u><b>Email</b></u>: sauver.vie@donsang.ma</p>
+    <p class="copyright">Copyright &copy; 2022 Association sauver des vies</p>
+</div>
+</body>
+</html>
+<script src="js.js"></script>
